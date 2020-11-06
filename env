@@ -1,14 +1,14 @@
 # Express setting
 NODE_ENV=development
-PORT=6000
-HOST=localhost
-PROJECTNAME=newproject
+PORT=15500
+HOST=0.0.0.0
+PROJECTNAME=maha-task-1
 
 # Database setting
 DB_HOST=localhost
-DB_NAME=newproject
-DB_USERNAME=root
-DB_PASSWORD=console
+DB_NAME=learner2
+DB_USERNAME=learner2
+DB_PASSWORD=learner@123
 DB_TIMEZONE=Asia/Calcutta
 
 
