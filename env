@@ -1,0 +1,22 @@
+# Express setting
+NODE_ENV=development
+PORT=5000
+HOST=localhost
+PROJECTNAME=newproject
+
+# Database setting
+DB_HOST=localhost
+DB_NAME=newproject
+DB_USERNAME=root
+DB_PASSWORD=console
+DB_TIMEZONE=Asia/Calcutta
+
+
+
+#File Url
+FILEURL='http://localhost:5000'
+# Orgin
+ORGIN='http://localhost:4004,https://codesandbox.io/s/'
+
+# Allow ip address
+IP='127.0.0.1,192.168.1.5'
