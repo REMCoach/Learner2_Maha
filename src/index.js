@@ -1,6 +1,5 @@
 const chalk = require("chalk");
 const config = require("./config");
-console.log(config)
 const app = require("./app");
 
 const http = require("http");
