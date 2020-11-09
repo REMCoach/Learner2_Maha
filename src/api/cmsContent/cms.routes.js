@@ -55,6 +55,8 @@ const corsOptionsDelegate = (req, res, next) => {
 
 router.route("/sandbox/test").get(cmsContent.sandboxtest);
 
+router.route("/add").post(cmsContent.addMaster)
+
 router
   .route("/getFullFreedom/getFreedom/:tableName?")
   .put(cmsContent.getFreedom);
