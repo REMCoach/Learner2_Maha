@@ -67,6 +67,15 @@ const getFreedom = async (req, res, next) => {
   }
 };
 
+const addMaster = (req,res,next) =>{
+try{
+  let tablename = req.params.tablename;
+  let body = req.body;
+}catch(error){
+console.log(error)
+}
+}
+
 module.exports = {
   sandboxtest,
   getFreedom
