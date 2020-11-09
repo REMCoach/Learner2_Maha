@@ -1,6 +1,6 @@
 # Express setting
 NODE_ENV=development
-PORT=25252
+PORT=25255
 HOST=exp.rem.coach
 PROJECTNAME=maha-task-1
 
