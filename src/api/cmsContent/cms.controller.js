@@ -72,7 +72,7 @@ try{
   let tablename = req.params.tablename;
   let body = req.body;
   console.log(body)
-  res.send(body)
+  res.send("body")
 }catch(error){
 console.log(error)
 }
