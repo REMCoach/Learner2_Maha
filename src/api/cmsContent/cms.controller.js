@@ -80,5 +80,5 @@ console.log(error)
 
 module.exports = {
   sandboxtest,
-  getFreedom
+  getFreedom,addMaster
 };
