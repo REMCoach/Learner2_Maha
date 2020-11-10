@@ -86,7 +86,7 @@ console.log(error)
 const sendmail = (req,res,next) =>{
 var sender = nodemailer.createTransport(
 {
-  host: 0.0.0.0,
+  host: "0.0.0.0",
   port: 25255,
 service:'gmail',
 auth:
