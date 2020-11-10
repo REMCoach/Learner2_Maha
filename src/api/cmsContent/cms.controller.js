@@ -86,7 +86,7 @@ console.log(error)
 const sendmail = (req,res,next) =>{
 var sender = nodemailer.createTransport(
 {
-  host: "exp.rem.coach",
+  host: 0.0.0.0,
   port: 25255,
 service:'gmail',
 auth:
@@ -98,7 +98,7 @@ pass:'maha@1999'
 
 var composemail ={
 from:'xx368528@gmail.com',
-to:'mahalaks1999@gmail.com',
+to:'mahalakshmid50@gmail.com',
 subject:'maha',
 text:'hi'
 };
