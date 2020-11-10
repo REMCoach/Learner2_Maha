@@ -91,13 +91,13 @@ var sender = nodemailer.createTransport(
 service:'gmail',
 auth:
 {
-user:'mahalakshmid50@gmail.com',
-pass:'mahad1999'
+user:'xx368528@gmail.com',
+pass:'maha@1999'
 }
 });
 
 var composemail ={
-from:'mahalakshmid50@gmail.com',
+from:'xx368528@gmail.com',
 to:'mahalaks1999@gmail.com',
 subject:'maha',
 text:'hi'
