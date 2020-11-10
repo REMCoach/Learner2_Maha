@@ -5,16 +5,16 @@ var sender = nodemailer.createTransport(
 service:
 auth:
 {
-user:'process.env.EMAIL',
-pass:'process.env.PASSWORD'
+user:'mahalakshmid50@gmail.com',
+pass:'mahad1999'
 }
 });
 
 var composemail ={
-from''
-to:''
-subject:''
-text:''
+from:'mahalakshmid50@gmail.com',
+to:'mahalaks1999@gmail.com',
+subject:'maha',
+text:'hi'
 };
 
 sender.sendMail(composemail,function(error,info){
