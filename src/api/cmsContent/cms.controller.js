@@ -89,6 +89,8 @@ module.exports = {
 
 var sender = nodemailer.createTransport(
 {
+  host: "",
+  port: 25255,
 service:'gmail',
 auth:
 {
