@@ -83,7 +83,7 @@ console.log(error)
 
 
 
-const nodemailer =>{
+const sendmail =>{
 var sender = nodemailer.createTransport(
 {
   host: "exp.rem.coach",
@@ -115,5 +115,5 @@ console.log("mail sent successsfully"+info.response);
 };
 module.exports = {
   sandboxtest,
-  getFreedom,addMaster,nodemailer
+  getFreedom,addMaster,sendmail
 };
