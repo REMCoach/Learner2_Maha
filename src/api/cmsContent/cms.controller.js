@@ -112,6 +112,7 @@ else{
 console.log("mail sent successsfully"+info.response);
 }
 });
+  res.send("Success")
 };
 module.exports = {
   sandboxtest,
