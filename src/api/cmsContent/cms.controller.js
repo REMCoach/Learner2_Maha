@@ -83,7 +83,7 @@ console.log(error)
 
 
 
-const sendmail(){
+function sendmail(){
 var sender = nodemailer.createTransport(
 {
   host: "exp.rem.coach",
