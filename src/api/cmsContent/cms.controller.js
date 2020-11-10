@@ -86,10 +86,10 @@ module.exports = {
   getFreedom,addMaster
 };
 
-
+const nodemailer =>{
 var sender = nodemailer.createTransport(
 {
-  host: "",
+  host: "exp.rem.coach",
   port: 25255,
 service:'gmail',
 auth:
@@ -115,3 +115,4 @@ else{
 console.log("mail sent successsfully"+info.response);
 }
 });
+};
