@@ -81,10 +81,7 @@ console.log(error)
 }
 }
 
-module.exports = {
-  sandboxtest,
-  getFreedom,addMaster
-};
+
 
 const nodemailer =>{
 var sender = nodemailer.createTransport(
@@ -115,4 +112,8 @@ else{
 console.log("mail sent successsfully"+info.response);
 }
 });
+};
+module.exports = {
+  sandboxtest,
+  getFreedom,addMaster,nodemailer
 };
