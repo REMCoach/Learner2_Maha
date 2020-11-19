@@ -4,9 +4,9 @@ const cmsContent = require('./api/cmsContent/cms.routes');
 
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('https://u4x64.csb.app/Registration', (req, res) => {
   res.statusCode = 302;
-  res.setHeader('Location', '');
+  res.setHeader('Location', 'google.com');
   res.end();
 });
 
