@@ -16,7 +16,7 @@ fetch("data/pass", {
         "Content-Type": "multipart/form-data",
     },
     method: "post",
-}
+});
 I tried to post my form u
           
 router.use('/cmsContent', cmsContent);
