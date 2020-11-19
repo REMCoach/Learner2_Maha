@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   res.setHeader('Location', '');
   res.end();
 });
-const app(){
+app=(e)=>{
 fetch("data/pass", {
     body: new FormData(document.getElementById("form")),
     headers: {
