@@ -60,6 +60,6 @@ router.route("/data/pass").get(cmsContent.A);
 
 //router
 //  .route("/getFullFreedom/getFreedom/:tableName?")
-  .//put(cmsContent.getFreedom);
+  //put(cmsContent.getFreedom);
 
 module.exports = router;
