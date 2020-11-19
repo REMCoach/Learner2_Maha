@@ -13,8 +13,8 @@ A=(e)=>{
 fetch("data/pass", {
     body: new FormData(document.getElementById("form")),
     headers: {
-        //"Content-Type": "application/x-www-form-urlencoded",
-        "Content-Type": "multipart/form-data",
+        "Content-Type": "application/x-www-form-urlencoded",
+       // "Content-Type": "multipart/form-data",
     },
     method: "post",
 });
