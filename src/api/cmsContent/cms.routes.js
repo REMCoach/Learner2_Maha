@@ -52,7 +52,7 @@ const corsOptionsDelegate = (req, res, next) => {
 //   // .get(corsOptionsDelegate, cmsContent.getMasterValues)
 //   .put(corsOptionsDelegate, cmsContent.updateMaster)
 //   .delete(corsOptionsDelegate, cmsContent.deleteMaster);
-router.route("/data/pass").get(cmsContent.A);
+router.route("/data/pass").post(cmsContent.A);
 //router.route("/sandbox/test").get(cmsContent.sandboxtest);
 
 //router.route("/add/:tablename").post(cmsContent.addMaster)
