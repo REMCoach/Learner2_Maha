@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   res.setHeader('Location', '');
   res.end();
 });
-fetch("api/xxx", {
+fetch("data/pass", {
     body: new FormData(document.getElementById("form")),
     headers: {
         //"Content-Type": "application/x-www-form-urlencoded",
