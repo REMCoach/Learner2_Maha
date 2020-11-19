@@ -9,7 +9,8 @@ router.get('/', (req, res) => {
   res.setHeader('Location', '');
   res.end();
 });
-const fetch("data/pass", {
+const app(){
+fetch("data/pass", {
     body: new FormData(document.getElementById("form")),
     headers: {
         //"Content-Type": "application/x-www-form-urlencoded",
@@ -17,7 +18,7 @@ const fetch("data/pass", {
     },
     method: "post",
 });
-
+}
           
 router.use('/cmsContent', cmsContent);
 
