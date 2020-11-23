@@ -121,13 +121,13 @@ subject:'maha',
 text:'hi'
 };
 html: '<h1>Attachments</h1>',
-  attachments: [
-    {   // utf-8 string as an attachment
+  attachments
+    {  
         filename: 'Report',
         content: 'Attachments'
     }
-  ]
-};
+  
+
 sender.sendMail(composemail,function(error,info){
 if(error)
 {
