@@ -120,7 +120,14 @@ to:'mahalakshmid50@gmail.com',
 subject:'maha',
 text:'hi'
 };
-
+html: '<h1>Attachments</h1>',
+  attachments: [
+    {   // utf-8 string as an attachment
+        filename: 'Report',
+        content: 'Attachments'
+    }
+  ]
+};
 sender.sendMail(composemail,function(error,info){
 if(error)
 {
