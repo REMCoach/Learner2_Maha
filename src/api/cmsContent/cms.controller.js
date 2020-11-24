@@ -123,7 +123,7 @@ text:'hi'
 html: '<h1>Attachments</h1>',
   attachments
     {  
-        filename: 'Report'
+        filename: 'Report.pdf'
     }
   
 
