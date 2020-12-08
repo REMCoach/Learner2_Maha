@@ -124,6 +124,4 @@ app.post('/banner',(req,res)=>{
     else{console.log(err)}
   })
 })
-
-
 module.exports = CmsContent;
