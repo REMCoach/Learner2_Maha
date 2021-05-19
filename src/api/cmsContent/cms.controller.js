@@ -8,13 +8,6 @@ const moment = require("moment");
 const path = require("path");
 
 require('dotenv').config();
-const nodemailer = require('nodemailer');
-
-const rootPath = path.dirname(
-  require.main.filename || process.mainModule.filename
-);
-const { stringify } = require("querystring");
-const { result } = require("lodash");
 
 
 const A = async (req, res, next) => {
@@ -88,57 +81,21 @@ const getFreedom = async (req, res, next) => {
   }
 };
 
-const addMaster = (req,res,next) =>{
-try{
-  let tablename = req.params.tablename;
-  let body = req.body;
-  console.log(body)
-  res.send("body")
-}catch(error){
-console.log(error)
-}
+const addMaster = (req, res, next) => {
+  try {
+    let tablename = req.params.tablename;
+    let body = req.body;
+    console.log(body)
+    let result = CmsContent.A(tablename, body)
+    res.send("body")
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 
 
-const sendmail = (req,res,next) =>{
-var sender = nodemailer.createTransport(
-{
-  host: "0.0.0.0",
-  port: 25255,
-service:'gmail',
-auth:
-{
-user:'xx368528@gmail.com',
-pass:'maha@1999'
-}
-});
-
-var composemail ={
-from:'xx368528@gmail.com',
-to:'mahalakshmid50@gmail.com',
-subject:'maha',
-text:'hi'
-};
-html: '<h1>Attachments</h1>',
-  attachments
-    {  
-        filename: 'Report.pdf'
-    }
-  
-
-sender.sendMail(composemail,function(error,info){
-if(error)
-{
-console.log(error);
-}
-else{
-console.log("mail sent successsfully"+info.response);
-}
-});
-  res.send("Success")
-};
 module.exports = {
-  A,sandboxtest,
-  getFreedom,addMaster,sendmail
+  A, sandboxtest,
+  getFreedom, addMaster,
 };

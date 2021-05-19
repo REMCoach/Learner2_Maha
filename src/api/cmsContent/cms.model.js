@@ -84,44 +84,4 @@ class CmsContent {
   }
 }
 
-app.post('/banner',(req,res)=>{
-  let age = req.body.age
-  let city  = req.body.city
-  let religion  = req.body.religion
-  let url = req.body.url
-  
-
-  if(age=="18+"){
-    if(city=="Chennai"){
-        if(religion=="Religion1"){
-          console.log("type1")
-          db.query("insert into Example (type1) values(?)",[url],(err,result)=>{
-            if(!err){res.send({"Example":"banner"})}
-            else{res.send("error"),
-          console.log(err);}
-          })
-        }else{
-          console.log("type2")
-          db.query("insert into Example (type2) values (?)",[url],(err,result)=>{
-            if(!err){res.send({"":"mapping"})}
-            else{res.send("error")}
-          })
-        }
-    }else{
-      if(religion=="Religion1"){
-        console.log("type3")
-        db.query("insert into Example (type3) values (?)",[url],(err,result)=>{
-          if(!err){res.send({"type":"type3"})}
-          else{res.send("error")}
-        })
-      }
-      }
-    }
-
-  app.get('/banner',(req,res)=>{
-  db.query("select * from Example",(err,result)=>{
-    if(!err){res.send(result)}
-    else{console.log(err)}
-  })
-})
 module.exports = CmsContent;

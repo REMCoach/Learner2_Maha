@@ -8,16 +8,10 @@
     "dev": "nodemon src/index.js",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/REMCoach/Learner2_Maha.git"
-  },
+  
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/REMCoach/Learner2_Maha/issues"
-  },
-  "homepage": "https://github.com/REMCoach/Learner2_Maha#readme",
+  
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

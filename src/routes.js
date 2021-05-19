@@ -4,7 +4,7 @@ const cmsContent = require('./api/cmsContent/cms.routes');
 
 const router = Router();
 
-router.get('https://7vzbs.csb.app/', (req, res) => {
+router.get('/', (req, res) => {
   res.statusCode = 302;
   res.setHeader('Location', 'google.com');
   res.end();
